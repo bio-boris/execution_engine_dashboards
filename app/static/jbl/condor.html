@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico"> -->
+
+    <title>HTCondor Jobs Status</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sticky-footer-navbar/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <!-- Custom styles for this template -->
+    <link href="./css/sticky-footer-navbar.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#">HTCondor Jobs from REST API</a>
+
+        </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main role="main" class="container-fluid">
+        <!-- <div id='controls'>
+            <h1 class="mt-5">HTCondor Jobs from REST API</h1>
+            <p class="lead"> Search for running/idle/held jobs. 
+            <p>Back to <a href="../sticky-footer/">the default sticky footer</a> minus the navbar.</p>
+        </div> -->
+        <br><br><br><br>
+        <div id='condor'>
+            <table id="condor_table" class="table table-striped table-bordered" style="width:100%">
+                <thead id="condor_table_head">
+                    <tr>
+                        <th>User</th>
+                        <th>Job ID</th>
+                        <th>Condor ID</th>
+                        <th>Job Status</th>
+                        <th>Job Status Name</th>
+                        <th>Hold Reason</th>
+                        <th>Condor Ad </th>
+                        <th>EE2 Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+                <!-- <tbody id='condor_table_body'>
+
+
+                </tbody> -->
+
+            </table>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">Execution Engine 2</span>
+        </div>
+    </footer>
+
+
+</body>
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src='https://code.jquery.com/jquery-3.3.1.js'></script>
+<script src='https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js'></script>
+<script src='https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js'>
+</script>
+<script src='./js/condor.js' type="module"></script>
+
+</html>
